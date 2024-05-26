@@ -41,7 +41,9 @@
     localStorage.setItem("listProduct", JSON.stringify(listProduct))
     render()
 }
-}
+
+
+    }
     function render() {
     let listProduct = localStorage.getItem("listProduct") ? JSON.parse(localStorage.getItem("listProduct")) : []
     let product = `<tr>
