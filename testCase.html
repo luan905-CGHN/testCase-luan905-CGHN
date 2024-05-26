@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <link rel="stylesheet" href="TestCase.css">
+
+</head>
+<body style="background-color:ghostwhite" >
+
+    <div class="form">
+      <div>
+        <label for="name" class="form-label">Tên Sản Phẩm:</label>
+        <input id="tên sản phẩm" type="text" class="form-input" >
+        <div class="error-message"></div>
+      </div>
+      <div>
+        <label for="number" class="form-label">Mã Sản Phẩm:</label>
+        <input id="mã sản phẩm" type="text" class="form-input">
+        <div class="error-message"></div>
+      </div>
+      <div>
+        <label for="quantity" class="form-label">Số Lượng Bán:</label>
+        <input id="số lượng bán" type="text" class="form-input" >
+        <div class="error-message"></div>
+      </div>
+      <div>
+        <label for="price" class="form-label">Giá Bán:</label>
+        <input id="giá bán" type="text" class="form-input" >
+        <div class="error-message"></div>
+      </div>
+      <div>
+        <input id="index" type="hidden">
+      </div>
+
+      <button id="add" onclick="addNew()" style="background: chartreuse">Add New</button>
+      <button id="update" style="display: none" onclick="changeProduct() ">Update</button>
+      
+  <table border="1px" cellpadding="10" cellspacing="10" id="tableContent" >
+    <tr>
+      <th>ID</th>
+      <th>Tên sản phẩm</th>
+      <th>Mã sản phẩm</th>
+      <th>số lượng bán </th>
+      <th>giá bán </th>
+      <th>chức năng</th>
+    </tr>
+  </table>
+
+  </div>
+    <script src="testCase.js"></script>
+</body>
+</html>
